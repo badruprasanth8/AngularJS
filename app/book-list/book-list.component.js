@@ -1,6 +1,6 @@
-// Register `bookList` component, along with its associated controller and template
+// Register the `bookList` component on the `bookList` module,
 angular.
-  module('libraryApp').
+  module('bookList').
   component('bookList', {
     template:
         '<ul>' +
