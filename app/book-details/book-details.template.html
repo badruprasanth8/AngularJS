@@ -1,0 +1,14 @@
+<ul class="specs">
+    <li>
+      <span>Availability and Networks</span>
+      <dl>
+        <dt>Availability</dt>
+        <dd ng-repeat="availability in $ctrl.book.availability">{{availability}}</dd>
+      </dl>
+    </li>
+    ...
+    <li>
+      <span>Additional Details</span>
+      <dd>{{$ctrl.book.details}}</dd>
+    </li>
+  </ul>
