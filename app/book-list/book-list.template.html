@@ -24,7 +24,8 @@
   
         <ul class="books">
           <li ng-repeat="book in $ctrl.books | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-            <span>{{book.name}}</span>
+            <a href="#!/books/{{book.bookId}}" class="thumb"> {{book.name}}</a>
+          
             <p>{{book.snippet}}</p>
           </li>
         </ul>
