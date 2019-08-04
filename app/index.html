@@ -6,15 +6,10 @@
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <script src="lib/angular/angular.js"></script>
     <script src="app.js"></script>
+    <script src="librarybooks.component.js"></script>
   </head>
-  <body  ng-controller="LibraryController">
+  <body>
 
-    <ul>
-        <li ng-repeat="book in books">
-          <span>{{book.name}}</span>
-          <p>{{book.snippet}}</p>
-        </li>
-      </ul>
-      <p>Total number of books: 2</p>
+    <book-list></book-list>
   </body>
 </html>
