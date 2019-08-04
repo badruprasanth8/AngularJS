@@ -3,12 +3,10 @@ angular.
   module('bookList').
   component('bookList', {
     templateUrl:'book-list/book-list.template.html',       
-    controller: function LibraryController($http) {
-        var self = this;
-        self.orderProp = 'age';
-  
-        $http.get('books/books.json').then(function(response) {
-          self.books = response.data;
-        });
-    }
+    controller: ['Book',
+      function BookListController(Book) {
+        this.books = Book.query();
+        this.orderProp = 'age';
+      }
+    ]
   });

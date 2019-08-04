@@ -1,3 +1,4 @@
 angular.module('bookDetails', [
-    'ngRoute'
+    'ngRoute',
+    'core.books'
   ]);

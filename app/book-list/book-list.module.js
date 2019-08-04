@@ -1,2 +1,2 @@
 // Define the `bookList` module
-angular.module('bookList', []);
+angular.module('bookList', ['core.books']);
